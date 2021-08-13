@@ -1,0 +1,6 @@
+<div class="userform form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" [(ngModel)]="userName">
+    <p>user name is: {{userName}}</p>
+    <button [disabled]="!isButtonEnable()" (click)="resetUsername()" class="btn btn-primary">Reset username</button>
+</div>
